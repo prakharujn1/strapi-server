@@ -6,10 +6,10 @@ export default [
     config: {
       contentSecurityPolicy: {
         directives: {
-          "default-src": ["'self'", "data:", "blob:", "http://localhost:1337"],
-          "frame-ancestors": ["*"],  // Change to your frontend URL
-          "media-src": ["*"],
-          "img-src": ["*"],
+          "default-src": ["'self'", "data:", "blob:", "http://localhost:1337", "https://clc-website-indol.vercel.app"],
+          "frame-ancestors": ["'self'", "http://localhost:5173","https://clc-website-indol.vercel.app"], // Change to your frontend URL
+          "media-src": ["'self'", "data:", "blob:", "http://localhost:1337","https://clc-website-indol.vercel.app"],
+          "img-src": ["'self'", "data:", "blob:", "http://localhost:1337","https://clc-website-indol.vercel.app"],
         },
       },
     },
