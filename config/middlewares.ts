@@ -8,8 +8,8 @@ export default [
         directives: {
           "default-src": ["'self'", "data:", "blob:", "http://localhost:1337"],
           "frame-ancestors": ["*"],  // Change to your frontend URL
-          "media-src": ["'self'", "data:", "blob:", "http://localhost:1337"],
-          "img-src": ["'self'", "data:", "blob:", "http://localhost:1337"],
+          "media-src": ["*"],
+          "img-src": ["*"],
         },
       },
     },
