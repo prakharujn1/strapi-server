@@ -7,7 +7,7 @@ export default [
       contentSecurityPolicy: {
         directives: {
           "default-src": ["'self'", "data:", "blob:", "http://localhost:1337"],
-          "frame-ancestors": ["'self'", "http://localhost:5173"], // Change to your frontend URL
+          "frame-ancestors": ["*"],  // Change to your frontend URL
           "media-src": ["'self'", "data:", "blob:", "http://localhost:1337"],
           "img-src": ["'self'", "data:", "blob:", "http://localhost:1337"],
         },
